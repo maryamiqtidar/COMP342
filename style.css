@@ -45,15 +45,27 @@ button {
 }
 
 .custom-card {
-    background-color: #white;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    width: 1000px;
-    height: 450px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); 
-    transition: box-shadow 0.3s ease; 
-    transition: transform 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 1000px;
+  height: 450px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  transform: translateX(10%); 
+  transition: transform 0.5s ease;
+  animation: slideIn 1s forwards; 
 }
+
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+  }
+}
+
+.custom-card:hover {
+  box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.3);
+}
+
 
 .resumefont {
   color: #803716;
@@ -67,14 +79,27 @@ button {
 }
 	
 .resume-card {
-    background-color: #white;
+    background-color: rgba(255, 255, 255, 0.7); 
     border: 1px solid #ccc;
     border-radius: 5px;
 	width: 800px; 
     height: 200px; 
 	box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2); 
-   
+    transform: translateX(10%); 
+    transition: transform 0.5s ease;
+    animation: slideIn 1s forwards; 
   }
+  
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+  }
+}
+
+.resume-card:hover {
+  box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.3);
+}
+
   
 .resumeheadings{
 	color: black; 
@@ -95,18 +120,18 @@ button {
 
  
 .contact-card {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.7);
     border: 1px solid #ccc;
     border-radius: 10px;
 	width: 600px; 
     height: 260px; 
+	box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2); 
   }
   
 
 
 .my-image {
   display: block;
-
   border-radius: 50%; 
   width: 150px;
   height: 150px;
